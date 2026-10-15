@@ -1,22 +1,22 @@
 # GoogleImitation
 
-使用 SwiftUI 製作的 Google App 首頁介面仿作，重現搜尋首頁、快捷功能、資訊卡片與 Discover 新聞卡片等視覺元素。
+A SwiftUI recreation of the Google app home screen, featuring a search interface, quick actions, information cards, and a Discover-style news card.
 
-> 本專案僅供 SwiftUI 學習與介面實作練習，與 Google LLC 沒有任何關聯。
+> This project was created for learning and UI implementation practice. It is not affiliated with or endorsed by Google LLC.
 
-## 功能
+## Features
 
-- Google 風格首頁與搜尋列
-- AI 模式、語音及其他快捷功能按鈕
-- 天氣、日出時間與自訂資訊卡片
-- Google Discover 風格新聞卡片
-- 新聞收藏狀態切換
-- 使用系統分享介面分享新聞標題
-- 淺色／深色模式切換
-- 使用 `@AppStorage` 保存外觀偏好
-- SF Symbols 圖示與 SwiftUI 動畫
+- Google-inspired home screen and search bar
+- Quick actions for AI mode, voice features, and more
+- Weather, sunrise, and customizable information cards
+- Google Discover-inspired news card
+- Interactive favorite button
+- Native sharing with `ShareLink`
+- Light and dark appearance toggle
+- Persistent appearance preference using `@AppStorage`
+- SF Symbols and SwiftUI animations
 
-## 使用技術
+## Built With
 
 - Swift
 - SwiftUI
@@ -25,37 +25,37 @@
 - Asset Catalog
 - SF Symbols
 
-## 專案結構
+## Project Structure
 
 ```text
 GoogleImitation/
-├── Assets.xcassets/       # 圖片與色彩資源
-├── ContentView.swift      # 首頁、搜尋區、資訊卡片與底部導覽
-├── NewsCardView.swift     # Discover 新聞卡片
-└── MyApp.swift            # App 進入點
+├── Assets.xcassets/       # Images and color assets
+├── ContentView.swift      # Home screen, search, information cards, and navigation
+├── NewsCardView.swift     # Discover-style news card
+└── MyApp.swift            # App entry point
 ```
 
-## 執行方式
+## Getting Started
 
-1. Clone repository：
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/yndjl-5/Google-page-imitation.git
    ```
 
-2. 使用 Xcode 開啟 `GoogleImitation.xcodeproj`。
-3. 選擇 iPhone Simulator 或實機。
-4. 按下 Run，或使用快捷鍵 `Command + R`。
+2. Open `GoogleImitation.xcodeproj` in Xcode.
+3. Select an iPhone simulator or a connected device.
+4. Click Run or press `Command + R`.
 
-## 說明
+## Current Limitations
 
-目前畫面內容與新聞資料為靜態示範資料，搜尋列及部分圖示主要用於介面呈現，尚未串接 Google 搜尋或其他外部 API。
+The content and news data are currently static. The search bar and several icons are visual components only and are not connected to Google Search or any external API.
 
-## 未來可擴充項目
+## Possible Improvements
 
-- 串接即時搜尋建議
-- 加入語音搜尋
-- 串接天氣及新聞 API
-- 完善頁面導覽與快捷功能
-- 增加測試與無障礙支援
+- Add live search suggestions
+- Implement voice search
+- Integrate weather and news APIs
+- Add navigation and complete the quick actions
+- Improve accessibility and test coverage
 
